@@ -28,9 +28,9 @@ struct LocationListView: View {
                                 .minimumScaleFactor(0.75)
 
                             HStack {
-                                AvatartView()
-                                AvatartView()
-                                AvatartView()
+                                AvatartView(size: 35)
+                                AvatartView(size: 35)
+                                AvatartView(size: 35)
                             }
                         }
                         .padding(.leading, 8)
@@ -49,11 +49,13 @@ struct LocationListView_Previews: PreviewProvider {
 }
 
 struct AvatartView: View {
+    var size: CGFloat
+
     var body: some View {
         Image("default-avatar")
             .resizable()
             .scaledToFit()
-            .frame(width: 35, height: 35)
+            .frame(width: size, height: size)
             .clipShape(Circle())
     }
 }
