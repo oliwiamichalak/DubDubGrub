@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E094AA281C1B830016A1D7 /* DDGLocation.swift */; };
 		F49079FA27E4A40D008EA198 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49079F927E4A40D008EA198 /* DubDubGrubApp.swift */; };
 		F49079FE27E4A411008EA198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49079FD27E4A411008EA198 /* Assets.xcassets */; };
 		F4907A0127E4A411008EA198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4907A0027E4A411008EA198 /* Preview Assets.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4E094AA281C1B830016A1D7 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		F49079F627E4A40D008EA198 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49079F927E4A40D008EA198 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		F49079FD27E4A411008EA198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4E094A9281C1B680016A1D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4E094AA281C1B830016A1D7 /* DDGLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F49079ED27E4A40C008EA198 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		F49079F827E4A40D008EA198 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				C4E094A9281C1B680016A1D7 /* Model */,
 				F4907A3D27E4EA43008EA198 /* Extensions */,
 				F4907A3E27E4EA5D008EA198 /* Views */,
 				F4907A2327E4A468008EA198 /* DubDubGrub.entitlements */,
@@ -346,6 +357,7 @@
 				F4907A2C27E4A763008EA198 /* LocationMapView.swift in Sources */,
 				F4907A2E27E4A782008EA198 /* LocationListView.swift in Sources */,
 				F4907A3227E4C6DA008EA198 /* LocationDetailView.swift in Sources */,
+				C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */,
 				F4907A2A27E4A72B008EA198 /* AppTabView.swift in Sources */,
 				F4907A3427E4E28C008EA198 /* AvatarView.swift in Sources */,
 				F4907A3A27E4E532008EA198 /* View+Ext.swift in Sources */,
