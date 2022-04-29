@@ -118,6 +118,7 @@
 		C4E85BA5281C23E100DF6AA8 /* Utilties */ = {
 			isa = PBXGroup;
 			children = (
+				F4907A3D27E4EA43008EA198 /* Extensions */,
 				C4E85BA6281C23ED00DF6AA8 /* CloudKitManager.swift */,
 				C4E85BA8281C244200DF6AA8 /* Constants.swift */,
 			);
@@ -150,7 +151,6 @@
 			children = (
 				C4E85BA5281C23E100DF6AA8 /* Utilties */,
 				C4E094A9281C1B680016A1D7 /* Model */,
-				F4907A3D27E4EA43008EA198 /* Extensions */,
 				F4907A3E27E4EA5D008EA198 /* Views */,
 				F4907A2327E4A468008EA198 /* DubDubGrub.entitlements */,
 				F49079F927E4A40D008EA198 /* DubDubGrubApp.swift */,
