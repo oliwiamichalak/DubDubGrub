@@ -10,6 +10,7 @@
 		C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E094AA281C1B830016A1D7 /* DDGLocation.swift */; };
 		C4E85BA2281C1EDC00DF6AA8 /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E85BA1281C1EDB00DF6AA8 /* DDGProfile.swift */; };
 		C4E85BA4281C1EF400DF6AA8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E85BA3281C1EF400DF6AA8 /* MockData.swift */; };
+		C4E85BA7281C23ED00DF6AA8 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E85BA6281C23ED00DF6AA8 /* CloudKitManager.swift */; };
 		F49079FA27E4A40D008EA198 /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49079F927E4A40D008EA198 /* DubDubGrubApp.swift */; };
 		F49079FE27E4A411008EA198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49079FD27E4A411008EA198 /* Assets.xcassets */; };
 		F4907A0127E4A411008EA198 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4907A0027E4A411008EA198 /* Preview Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		C4E094AA281C1B830016A1D7 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		C4E85BA1281C1EDB00DF6AA8 /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		C4E85BA3281C1EF400DF6AA8 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		C4E85BA6281C23ED00DF6AA8 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		F49079F627E4A40D008EA198 /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49079F927E4A40D008EA198 /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		F49079FD27E4A411008EA198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C4E85BA5281C23E100DF6AA8 /* Utilties */ = {
+			isa = PBXGroup;
+			children = (
+				C4E85BA6281C23ED00DF6AA8 /* CloudKitManager.swift */,
+			);
+			path = Utilties;
+			sourceTree = "<group>";
+		};
 		F49079ED27E4A40C008EA198 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		F49079F827E4A40D008EA198 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				C4E85BA5281C23E100DF6AA8 /* Utilties */,
 				C4E094A9281C1B680016A1D7 /* Model */,
 				F4907A3D27E4EA43008EA198 /* Extensions */,
 				F4907A3E27E4EA5D008EA198 /* Views */,
@@ -368,6 +379,7 @@
 				C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */,
 				F4907A2A27E4A72B008EA198 /* AppTabView.swift in Sources */,
 				F4907A3427E4E28C008EA198 /* AvatarView.swift in Sources */,
+				C4E85BA7281C23ED00DF6AA8 /* CloudKitManager.swift in Sources */,
 				F4907A3A27E4E532008EA198 /* View+Ext.swift in Sources */,
 				F4907A3C27E4E68F008EA198 /* DDBButton.swift in Sources */,
 				F4907A3627E4E2C7008EA198 /* LocationCell.swift in Sources */,
