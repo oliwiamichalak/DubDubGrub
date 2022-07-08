@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4988E3F2878543100E58182 /* CKRector+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988E3E2878543100E58182 /* CKRector+Ext.swift */; };
+		C4988E3F2878543100E58182 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4988E3E2878543100E58182 /* CKRecord+Ext.swift */; };
 		C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E094AA281C1B830016A1D7 /* DDGLocation.swift */; };
 		C4E85BA2281C1EDC00DF6AA8 /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E85BA1281C1EDB00DF6AA8 /* DDGProfile.swift */; };
 		C4E85BA4281C1EF400DF6AA8 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E85BA3281C1EF400DF6AA8 /* MockData.swift */; };
@@ -51,7 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C4988E3E2878543100E58182 /* CKRector+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRector+Ext.swift"; sourceTree = "<group>"; };
+		C4988E3E2878543100E58182 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
 		C4E094AA281C1B830016A1D7 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
 		C4E85BA1281C1EDB00DF6AA8 /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
 		C4E85BA3281C1EF400DF6AA8 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
@@ -200,7 +200,7 @@
 			children = (
 				F4907A2727E4A6B8008EA198 /* Color+Ext.swift */,
 				F4907A3927E4E532008EA198 /* View+Ext.swift */,
-				C4988E3E2878543100E58182 /* CKRector+Ext.swift */,
+				C4988E3E2878543100E58182 /* CKRecord+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 				F4907A2C27E4A763008EA198 /* LocationMapView.swift in Sources */,
 				F4907A2E27E4A782008EA198 /* LocationListView.swift in Sources */,
 				C4E85BA4281C1EF400DF6AA8 /* MockData.swift in Sources */,
-				C4988E3F2878543100E58182 /* CKRector+Ext.swift in Sources */,
+				C4988E3F2878543100E58182 /* CKRecord+Ext.swift in Sources */,
 				F4907A3227E4C6DA008EA198 /* LocationDetailView.swift in Sources */,
 				C4E85BA2281C1EDC00DF6AA8 /* DDGProfile.swift in Sources */,
 				C4E094AB281C1B830016A1D7 /* DDGLocation.swift in Sources */,
