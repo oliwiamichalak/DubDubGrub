@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AvatartView: View {
+struct AvatarView: View {
     var size: CGFloat
 
     var body: some View {
