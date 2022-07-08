@@ -15,7 +15,7 @@ struct LocationMapView: View {
     var body: some View {
         ZStack {
             Map(coordinateRegion: $viewModel.region, annotationItems: locationManager.locations, annotationContent: { location in
-                MapPin(coordinate: location.location.coordinate, tint: .brandPrimary)
+                MapMarker(coordinate: location.location.coordinate, tint: .brandPrimary)
             })
                 .ignoresSafeArea()
 

@@ -13,7 +13,7 @@ struct LocationListView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(locations, id: \.id) { location in
+                ForEach(locations) { location in
                     NavigationLink(destination: LocationDetailView(location: location)) {
                         LocationCell(location: location)
                     }
