@@ -18,3 +18,9 @@ struct AvatartView: View {
             .clipShape(Circle())
     }
 }
+
+struct AvatarView_Previews: PreviewProvider {
+    static var previews: some View {
+        AvatarView(size: 90)
+    }
+}

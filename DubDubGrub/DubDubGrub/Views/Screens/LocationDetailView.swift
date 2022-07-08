@@ -9,21 +9,23 @@ import SwiftUI
 
 struct LocationDetailView: View {
     
-    private let columns = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-
+    let columns = [GridItem(.flexible()),
+                   GridItem(.flexible()),
+                   GridItem(.flexible())]
+    
+    var location: DDGLocation
+    
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 16) {
             BannerImageView(imageName: "default-banner-asset")
 
             HStack {
-                AddressView(address: "123 Main Street")
-
+                AddressView(address: location.address)
                 Spacer()
             }
             .padding(.horizontal)
 
-            DescriptionView(text: "SuperLong text description here. SuperLong text description here. SuperLong text description here. SuperLong text description here.")
-
+            DescriptionView(text: location.description)
             ZStack {
                 Capsule()
                     .frame(height: 80)
@@ -36,9 +38,9 @@ struct LocationDetailView: View {
                         LocationActionButton(color: .brandPrimary, imageName: "location.fill")
                     }
 
-                    Link(destination: URL(string: "http://apple.co.uk")!) {
+                    Link(destination: URL(string: location.websiteURL)!, label: {
                         LocationActionButton(color: .brandPrimary, imageName: "network")
-                    }
+                    })
 
                     Button {
 
@@ -60,22 +62,19 @@ struct LocationDetailView: View {
                 .font(.title2)
 
             ScrollView {
-                LazyVGrid(columns: columns) {
-                    FirstNameAvatarView(firstName: "Oliwia")
+                LazyVGrid(columns: columns, content: {
                     FirstNameAvatarView(firstName: "Simon")
                     FirstNameAvatarView(firstName: "Kelly")
-                    FirstNameAvatarView(firstName: "Oliwia")
-                    FirstNameAvatarView(firstName: "Simon")
                     FirstNameAvatarView(firstName: "Kelly")
                     FirstNameAvatarView(firstName: "Oliwia")
-                    FirstNameAvatarView(firstName: "Simon")
-                    FirstNameAvatarView(firstName: "Kelly")
-                }
+                    FirstNameAvatarView(firstName: "Adam")
+                    FirstNameAvatarView(firstName: "Mikolaj")
+                    FirstNameAvatarView(firstName: "Marta")
+                })
             }
-
             Spacer()
         }
-        .navigationTitle("Location Name")
+        .navigationTitle(location.name)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -83,7 +82,7 @@ struct LocationDetailView: View {
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            LocationDetailView()
+            LocationDetailView(location: DDGLocation(record: MockData.location))
         }
     }
 }
@@ -91,7 +90,6 @@ struct LocationDetailView_Previews: PreviewProvider {
 struct LocationActionButton: View {
     var color: Color
     var imageName: String
-
     var body: some View {
         ZStack {
             Circle()
@@ -101,19 +99,19 @@ struct LocationActionButton: View {
             Image(systemName: imageName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 22, height: 22)
                 .foregroundColor(.white)
+                .frame(width: 22, height: 22)
         }
     }
 }
 
+
 struct FirstNameAvatarView: View {
     var firstName: String
-
     var body: some View {
         VStack {
-            AvatartView(size: 64)
-
+            AvatarView(size: 64)
+            
             Text(firstName)
                 .bold()
                 .lineLimit(1)
@@ -143,12 +141,11 @@ struct AddressView: View {
 
 struct DescriptionView: View {
     var text: String
-
     var body: some View {
         Text(text)
             .lineLimit(3)
             .minimumScaleFactor(0.75)
-            .padding(.horizontal)
             .frame(height: 70)
+            .padding(.horizontal)
     }
 }
